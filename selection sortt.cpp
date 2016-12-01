@@ -10,20 +10,20 @@ int main()
     }
  
     for(i=0;i<4;i++)
-    {   min=a[i]; //устанавливает самый первый элемент минимальным
+    {   min=a[i]; // sets the first element as minimum 
         loc=i; //0
-        for(j=i+1;j<5;j++) //цикл дл€ остальных 4 элементов
+        for(j=i+1;j<5;j++) //cycle for other 4 elements
         {
-            if(min>a[j]) //если элемент больше чем следующий, тогда минимальным устанавливаетс€ следующий элемент
+            if(min>a[j]) // if the element is greater than the next, the next element will be the minimum 
             {
                 min=a[j];
-                loc=j; //позици€ минимума
+                loc=j; //position of minimum
             }
         }
  
         temp=a[i];
         a[i]=a[loc];
-        a[loc]=temp; // мен€ет местами элементы. “о есть минимум прежде 
+        a[loc]=temp; // swap the positions of elements. that is the minimum goes before 
     }
  
     cout<<"\nSorted list is as follows\n";
